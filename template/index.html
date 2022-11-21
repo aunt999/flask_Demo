@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面笔记</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/woniunote.css">
+    <script type="text/javascript" src="/js/jquery-3.6.1.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <!--为了更好的兼容移动设备，使用CSS的适配功能 ,这样在转换成移动设备时，字体不会变小，会自适应宽度,user-scalable表示是否支持移动端绽放=yes/no默认是yes(场景app内页面可以禁止缩放，感觉是app本身的功能)-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes"/>
+    <!--@media表示设置屏幕的div最大宽度-->
+
+</head>
+<body>
+<div class="header">
+    <div class="container" style="border: solid 0px red;">
+        <div class="row">
+            <div class="col-5" style="padding-top: 8px"><img src="/img/logo.png" width="230"></div>
+            <!--d-none是所有屏幕隐藏；d-sm-none是大屏幕隐藏； d-sm-block大屏幕显示  -->
+            <div class="col-7 d-none d-sm-block" style="text-align: right;padding-top: 20px"><h2>以蜗牛之名，行学习之实</h2></div>
+            <div class="col-7 d-sm-none" style="text-align: right;padding-top: 22px"><h3>技术博客</h3></div>
+        </div>
+    </div>
+</div>
+<div class="menu">
+    <div class="container" style="border: solid 0px red;">
+        <nav class="navbar navbar-expand-lg navbar-dark menu-bar" style="background-color: #563d7c">
+            <a class="navbar-brand nav-link" href="#">快捷导航</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav menu-bar">
+                    <a class="nav-item nav-link" href="#">PHP开发</a>
+                    <a class="nav-item nav-link" href="#">Java开发</a>
+                    <a class="nav-item nav-link" href="#">Web前端</a>
+                    <a class="nav-item nav-link" href="#">Python开发</a>
+                    <a class="nav-item nav-link" href="#">测试开发</a>
+                    <a class="nav-item nav-link" href="#">数据科学</a>
+                    <a class="nav-item nav-link" href="#">网络案例</a>
+                    <a class="nav-item nav-link" href="#">蜗牛杂谈</a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="#"  data-toggle="modal" data-target="#mymodal">登录</a>
+                    <a class="nav-item nav-link" href="#">注册</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-12" style="border: none; padding: 0px">
+            <!--轮播图-->
+            <div class="col-12" style="padding: 10px 0px">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/banner-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/banner-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/banner-3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!--左边文章栏一-->
+            <div class="col-12 row article-list">
+                <div class="col-sm-3 col-3 thumb d-none d-sm-block">
+                    <img src="/img/623.png" class="img-fluid"/>
+                </div>
+                <div class="col-sm-9 col-xs-12 detail">
+                    <div class="title"><a href="#">利用python Flask框架开发web应用系统</a></div>
+                    <div class="info">作者：邓强&nbsp;&nbsp;&nbsp;类别：python开发&nbsp;&nbsp;&nbsp;日期：2020-02-12&nbsp;&nbsp;&nbsp;阅读：100次&nbsp;&nbsp;&nbsp;消耗积分：5分</div>
+                    <div class="intro">各位老铁，大家好~不知不觉又是一年现在距离2021年还有71天距离春节还有113天距离蜗牛学院第五届程序员节仅剩3天以往这个时间我们早就给每一位毕业小蜗牛发邀请...</div>
+                </div>
+            </div>
+            <div class="col-12 row article-list">
+                <div class="col-sm-3 col-3 thumb d-none d-sm-block">
+                    <img src="/img/623.png" class="img-fluid"/>
+                </div>
+                <div class="col-sm-9 col-xs-12 detail">
+                    <div class="title"><a href="#">利用python Flask框架开发web应用系统</a></div>
+                    <div class="info">作者：邓强&nbsp;&nbsp;&nbsp;类别：python开发&nbsp;&nbsp;&nbsp;日期：2020-02-12&nbsp;&nbsp;&nbsp;阅读：100次&nbsp;&nbsp;&nbsp;消耗积分：5分</div>
+                    <div class="intro">
+                        各位老铁，大家好~不知不觉又是一年现在距离2021年还有71天距离春节还有113天距离蜗牛学院第五届程序员节仅剩3天以往这个时间我们早就给每一位毕业小蜗牛发邀请...
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 row article-list" >
+                <div class="col-sm-3 col-3 thumb d-none d-sm-block">
+                    <img src="/img/623.png" class="img-fluid"/>
+                </div>
+                <div class="col-sm-9 col-xs-12 detail">
+                    <div class="title"><a href="#">利用python Flask框架开发web应用系统</a></div>
+                    <div class="info">作者：邓强&nbsp;&nbsp;&nbsp;类别：python开发&nbsp;&nbsp;&nbsp;日期：2020-02-12&nbsp;&nbsp;&nbsp;阅读：100次&nbsp;&nbsp;&nbsp;消耗积分：5分</div>
+                    <div class="intro">
+                        各位老铁，大家好~不知不觉又是一年现在距离2021年还有71天距离春节还有113天距离蜗牛学院第五届程序员节仅剩3天以往这个时间我们早就给每一位毕业小蜗牛发邀请...
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 row article-list">
+                <div class="col-sm-3 col-3 thumb d-none d-sm-block">
+                    <img src="/img/623.png" class="img-fluid"/>
+                </div>
+                <div class="col-sm-9 col-xs-12 detail">
+                    <div class="title"><a href="#">利用python Flask框架开发web应用系统</a></div>
+                    <div class="info">作者：邓强&nbsp;&nbsp;&nbsp;类别：python开发&nbsp;&nbsp;&nbsp;日期：2020-02-12&nbsp;&nbsp;&nbsp;阅读：100次&nbsp;&nbsp;&nbsp;消耗积分：5分</div>
+                    <div class="intro">
+                        各位老铁，大家好~不知不觉又是一年现在距离2021年还有71天距离春节还有113天距离蜗牛学院第五届程序员节仅剩3天以往这个时间我们早就给每一位毕业小蜗牛发邀请...
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 row article-list">
+                <div class="col-sm-3 col-3 thumb d-none d-sm-block">
+                    <img src="/img/623.png" class="img-fluid"/>
+                </div>
+                <div class="col-sm-9 col-xs-12 detail">
+                    <div class="title"><a href="#">利用python Flask框架开发web应用系统</a></div>
+                    <div class="info">作者：邓强&nbsp;&nbsp;&nbsp;类别：python开发&nbsp;&nbsp;&nbsp;日期：2020-02-12&nbsp;&nbsp;&nbsp;阅读：100次&nbsp;&nbsp;&nbsp;消耗积分：5分</div>
+                    <div class="intro">
+                        各位老铁，大家好~不知不觉又是一年现在距离2021年还有71天距离春节还有113天距离蜗牛学院第五届程序员节仅剩3天以往这个时间我们早就给每一位毕业小蜗牛发邀请...
+                    </div>
+                </div>
+            </div>
+
+            <!--翻页按钮-->
+             <div class="col-12 paginate">
+                  <!-- 如果是第1页，则上一页也是第1页，否则上一页为当前页-1 -->
+                <a href="http://pop3.woniuxy.com/page/1">上一页</a>&nbsp;&nbsp;
+                <!-- 根据总页数循环填充页码，并为其添加超链接进行导航 -->
+                <a href="http://pop3.woniuxy.com/page/1">1</a>&nbsp;&nbsp;
+                <a href="http://pop3.woniuxy.com/page/2">2</a>&nbsp;&nbsp;
+                <a href="http://pop3.woniuxy.com/page/3">3</a>&nbsp;&nbsp;
+                <a href="http://pop3.woniuxy.com/page/4">4</a>&nbsp;&nbsp;
+                <a href="http://pop3.woniuxy.com/page/5">5</a>&nbsp;&nbsp;
+                <a href="http://pop3.woniuxy.com/page/6">6</a>&nbsp;&nbsp;
+                <a href="http://pop3.woniuxy.com/page/7">7</a>&nbsp;&nbsp;
+                <a href="http://pop3.woniuxy.com/page/8">8</a>&nbsp;&nbsp;
+                <a href="http://pop3.woniuxy.com/page/9">9</a>&nbsp;&nbsp;
+                <a href="http://pop3.woniuxy.com/page/10">10</a>&nbsp;&nbsp;
+                 <!-- 如果是最后一页，则下一页也是最后页，否则下一页为当前页+1 -->
+                <a href="http://pop3.woniuxy.com/page/2">下一页</a>
+            </div>
+        </div>
+
+        <!--右边栏一-->
+        <div class="col-sm-3 col-12" style="border: none; padding-right: 0px; padding-top: 10px">
+            <!--搜索栏一-->
+            <div class="col-12 search-bar row">
+                <div class="col-8">
+                    <input type="text" class="form-control" id="keyword" placeholder="请输入关键字" onkeyup="doSearch(event)">
+                </div>
+                <div class="col-4" style="text-align:right;">
+                    <button type="button" class="btn btn-primary" onclick="doSearch(null)">搜索</button>
+                </div>
+            </div>
+            <!--推荐文章一-->
+            <div class="col-12 side">
+                <div class="col-12 tip">最新文章</div>
+                <ul id="last">
+                    <li><a href="http://pop3.woniuxy.com/article/609">1.&nbsp;&nbsp;10月24日，蜗牛学院第五届程序员...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/608">2.&nbsp;&nbsp;培训期间，从未12点之前离开过教...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/607">3.&nbsp;&nbsp;核心实验：利用UIAutomation库测...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/606">4.&nbsp;&nbsp;报告：阿多比学员出关了！...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/605">5.&nbsp;&nbsp;揭秘：带你了解学员眼中真实的阿...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/604">6.&nbsp;&nbsp;通过对合作企业的回访，我们发现...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/603">7.&nbsp;&nbsp;从会计转行Java开发，她的入职月...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/602">8.&nbsp;&nbsp;蜗牛出版之《自动化测试开发全程...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/601">9.&nbsp;&nbsp;核心实验：利用UISpy识别Window...</a></li>
+                </ul>
+            </div>
+            <div class="col-12 side">
+                <div class="col-12 tip">最多阅读</div>
+                <ul id="last">
+                    <li><a href="http://pop3.woniuxy.com/article/609">1.&nbsp;&nbsp;10月24日，蜗牛学院第五届程序员...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/608">2.&nbsp;&nbsp;培训期间，从未12点之前离开过教...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/607">3.&nbsp;&nbsp;核心实验：利用UIAutomation库测...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/606">4.&nbsp;&nbsp;报告：阿多比学员出关了！...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/605">5.&nbsp;&nbsp;揭秘：带你了解学员眼中真实的阿...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/604">6.&nbsp;&nbsp;通过对合作企业的回访，我们发现...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/603">7.&nbsp;&nbsp;从会计转行Java开发，她的入职月...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/602">8.&nbsp;&nbsp;蜗牛出版之《自动化测试开发全程...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/601">9.&nbsp;&nbsp;核心实验：利用UISpy识别Window...</a></li>
+                </ul>
+            </div>
+            <div class="col-12 side">
+                <div class="col-12 tip">特别推荐</div>
+                <ul id="last">
+                    <li><a href="http://pop3.woniuxy.com/article/609">1.&nbsp;&nbsp;10月24日，蜗牛学院第五届程序员...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/608">2.&nbsp;&nbsp;培训期间，从未12点之前离开过教...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/607">3.&nbsp;&nbsp;核心实验：利用UIAutomation库测...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/606">4.&nbsp;&nbsp;报告：阿多比学员出关了！...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/605">5.&nbsp;&nbsp;揭秘：带你了解学员眼中真实的阿...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/604">6.&nbsp;&nbsp;通过对合作企业的回访，我们发现...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/603">7.&nbsp;&nbsp;从会计转行Java开发，她的入职月...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/602">8.&nbsp;&nbsp;蜗牛出版之《自动化测试开发全程...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/601">9.&nbsp;&nbsp;核心实验：利用UISpy识别Window...</a></li>
+                </ul>
+                <div class="tip" style="background-color: #3276b1; text-align: center; cursor: pointer;" onclick="gotoTop()">回到顶部</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 底部设计 -->
+<div class="container-fluid footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 left">
+                <p>版权所有 © 蜗牛笔记 (V-1.0)</p>
+                <p>备案号：<a href="https://beian.miit.gov.cn/" target="_blank">XXXXXXXXXXXXXXXXXXX</a></p>
+            </div>
+            <div class="col-4 center">
+                <p>友情链接</p>
+                <p><a href="http://www.woniuxy.com/" target="_blank">在线课堂</a>&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.woniuxy.com/live" target="_blank">直播课堂</a>&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.woniuxy.com/train/index.html" target="_blank">培训中心</a>&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.aduobi.com/" target="_blank">UI设计学院</a>
+                </p>
+            </div>
+            <div class="col-4 right">
+                <p>联系我们</p>
+                <p>★孵化园★</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--模态登录和注册的模态框架-->
+<div class="modal fade" id="mymodal" data-backdrop="static" role="dialog" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header tabbale" id="tabs" style="background-color: #337AB7; height: 50px; padding: 5px 20px">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item active" id="login">
+                        <a class="nav-link" data-toggle="tab" href="#loginpanel" role="tab"
+                           aria-controls="home" aria-selected="true" style="color: midnightblue">
+                            <h6>登录</h6>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="reg">
+                        <a class="nav-link" data-toggle="tab" href="#regpanel" role="tab"
+                           aria-controls="profile" aria-selected="false" style="color: midnightblue">
+                            <h6>注册</h6>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--模态具体内容-->
+            <div class="tab-content">
+                <div class="tab-pane container active" id="loginpanel">
+                    <div class="modal-content" style="margin: 20px 0px;">
+                        <div class="modal-body ">
+                            <div class="from-group row">
+                                <label for="loginname" class="col-4">登录邮箱：</label>
+                                <input type="text" id="loginname" class="form-control col-7" placeholder="请输入你的邮箱地址"/>
+                            </div>
+                            <div class="from-group row" style="margin-top: 10px">
+                                <label for="loginpass" class="col-4">登录密码：</label>
+                                <input type="text" id="loginpass" class="form-control col-7" placeholder="请输入你的密码"/>
+                            </div>
+                            <div class="from-group row" style="margin-top: 10px">
+                                <label for="logincode" class="col-4">验证码：</label>
+                                <input type="text" id="logincode" class="form-control col-5" placeholder="请输入你的验证码"/>
+                                <img src="/vcode" id="loginvcode" class="col-3" >
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">登录</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="regpanel" role="tabpanel" aria-labelledby="contact-tab">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">新闻审核内容</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

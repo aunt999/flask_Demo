@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面笔记-文章阅读</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/woniunote.css">
+    <link href="/icon/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <!--为了更好的兼容移动设备，使用CSS的适配功能 ,这样在转换成移动设备时，字体不会变小，会自适应宽度,user-scalable表示是否支持移动端绽放=yes/no默认是yes(场景app内页面可以禁止缩放，感觉是app本身的功能)-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes"/>
+    <!--@media表示设置屏幕的div最大宽度-->
+
+</head>
+<body>
+<div class="header">
+    <div class="container" style="border: solid 0px red;">
+        <div class="row">
+            <div class="col-5" style="padding-top: 8px"><img src="/img/logo.png" width="230"></div>
+            <!--d-none是所有屏幕隐藏；d-sm-none是大屏幕隐藏； d-sm-block大屏幕显示  -->
+            <div class="col-7 d-none d-sm-block" style="text-align: right;padding-top: 20px"><h2>以蜗牛之名，行学习之实</h2></div>
+            <div class="col-7 d-sm-none" style="text-align: right;padding-top: 22px"><h3>技术博客</h3></div>
+        </div>
+    </div>
+</div>
+<div class="menu">
+    <div class="container" style="border: solid 0px red;">
+        <nav class="navbar navbar-expand-lg navbar-dark menu-bar" style="background-color: #563d7c">
+            <a class="navbar-brand nav-link" href="#">快捷导航</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav menu-bar">
+                    <a class="nav-item nav-link" href="#">PHP开发</a>
+                    <a class="nav-item nav-link" href="#">Java开发</a>
+                    <a class="nav-item nav-link" href="#">Web前端</a>
+                    <a class="nav-item nav-link" href="#">Python开发</a>
+                    <a class="nav-item nav-link" href="#">测试开发</a>
+                    <a class="nav-item nav-link" href="#">数据科学</a>
+                    <a class="nav-item nav-link" href="#">网络案例</a>
+                    <a class="nav-item nav-link" href="#">蜗牛杂谈</a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link" href="#">注册</a>
+                    <a class="nav-item nav-link" href="#">登录</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <!--左边栏目--文章内容-->
+        <div class="col-sm-9 col-12"  style="padding-top: 15px; padding-left:25px ; padding-right: 0px">
+            <div class="col-12 row acticle-detail" >
+                <div class="col-9 title">
+                    核心实验：利用UISpy识别Windows界面元素
+                </div>
+                <div class="col-3 favorite">
+                    <label><span class="oi oi-heart" aria-hidden="true"></span> 文章收藏</label>
+                </div>
+                <div class="col-12 info">
+                    作者：强哥&nbsp;&nbsp;&nbsp;类别：蜗牛杂谈&nbsp;&nbsp;&nbsp;日期：2020-10-21 11:04:50&nbsp;&nbsp;&nbsp;阅读：6377 次 消耗积分：0 分
+                </div>
+                <div class="col-12 content">
+                    首先项目工程代码量跟我们平时在蜗牛做的项目代码量不是一个层次，并且每个公司的代码风格和框架都不一样，需要花点时间去适应，不过代码逻辑都大同小异。
+                </div>
+            </div>
+            <div class="col-12 row article-nav">
+                <div>版权所有，转载本站文章请注明出处：蜗牛笔记， http://www.woniunote.com/article/608</div>
+                <div>上一篇：<a href="#">核心实验：利用UIAutomation库测试Windows应用（一）</a></div>
+                <div>下一篇：<a href="#">10月24日，蜗牛学院第五届程序员节正式开启！</a></div>
+            </div>
+            <!--评论区-->
+            <div class="col-12 row article-comment">
+                <div class="col-12 row">
+                    <div class="col-2">
+                        <label for="nickname">你的呢称：</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" id="nickname" class="form-control">
+                    </div>
+                </div>
+                <div class="col-12 row" style="padding-top: 5px">
+                    <div class="col-2">
+                        <label for="comment">你的评论：</label>
+                    </div>
+                    <div class="col-10">
+                        <textarea type="text" id="comment" class="form-control" style="height: 200px"></textarea>
+                    </div>
+                </div>
+                <div class="col-12 row" style="padding-top: 5px;">
+                    <div class="col-9" style="text-align: center">
+                        提示：登录后添加有效评论可享受积分哦！
+                    </div>
+                    <div class="col-3" style=" text-align: right">
+                        <button class="btn btn-primary">发个评论</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--右边栏目一-->
+        <div class="col-sm-3 col-12" style="border: none; padding-right: 0px; padding-top: 10px">
+            <!--搜索栏一-->
+            <div class="col-12 search-bar row">
+                <div class="col-8">
+                    <input type="text" class="form-control" id="keyword" placeholder="请输入关键字" onkeyup="doSearch(event)">
+                </div>
+                <div class="col-4" style="text-align:right;">
+                    <button type="button" class="btn btn-primary" onclick="doSearch(null)">搜索</button>
+                </div>
+            </div>
+            <!--推荐文章一-->
+            <div class="col-12 side">
+                <div class="col-12 tip">最新文章</div>
+                <ul id="last">
+                    <li><a href="http://pop3.woniuxy.com/article/609">1.&nbsp;&nbsp;10月24日，蜗牛学院第五届程序员...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/608">2.&nbsp;&nbsp;培训期间，从未12点之前离开过教...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/607">3.&nbsp;&nbsp;核心实验：利用UIAutomation库测...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/606">4.&nbsp;&nbsp;报告：阿多比学员出关了！...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/605">5.&nbsp;&nbsp;揭秘：带你了解学员眼中真实的阿...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/604">6.&nbsp;&nbsp;通过对合作企业的回访，我们发现...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/603">7.&nbsp;&nbsp;从会计转行Java开发，她的入职月...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/602">8.&nbsp;&nbsp;蜗牛出版之《自动化测试开发全程...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/601">9.&nbsp;&nbsp;核心实验：利用UISpy识别Window...</a></li>
+                </ul>
+            </div>
+            <div class="col-12 side">
+                <div class="col-12 tip">最多阅读</div>
+                <ul id="last">
+                    <li><a href="http://pop3.woniuxy.com/article/609">1.&nbsp;&nbsp;10月24日，蜗牛学院第五届程序员...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/608">2.&nbsp;&nbsp;培训期间，从未12点之前离开过教...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/607">3.&nbsp;&nbsp;核心实验：利用UIAutomation库测...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/606">4.&nbsp;&nbsp;报告：阿多比学员出关了！...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/605">5.&nbsp;&nbsp;揭秘：带你了解学员眼中真实的阿...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/604">6.&nbsp;&nbsp;通过对合作企业的回访，我们发现...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/603">7.&nbsp;&nbsp;从会计转行Java开发，她的入职月...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/602">8.&nbsp;&nbsp;蜗牛出版之《自动化测试开发全程...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/601">9.&nbsp;&nbsp;核心实验：利用UISpy识别Window...</a></li>
+                </ul>
+            </div>
+            <div class="col-12 side">
+                <div class="col-12 tip">特别推荐</div>
+                <ul id="last">
+                    <li><a href="http://pop3.woniuxy.com/article/609">1.&nbsp;&nbsp;10月24日，蜗牛学院第五届程序员...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/608">2.&nbsp;&nbsp;培训期间，从未12点之前离开过教...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/607">3.&nbsp;&nbsp;核心实验：利用UIAutomation库测...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/606">4.&nbsp;&nbsp;报告：阿多比学员出关了！...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/605">5.&nbsp;&nbsp;揭秘：带你了解学员眼中真实的阿...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/604">6.&nbsp;&nbsp;通过对合作企业的回访，我们发现...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/603">7.&nbsp;&nbsp;从会计转行Java开发，她的入职月...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/602">8.&nbsp;&nbsp;蜗牛出版之《自动化测试开发全程...</a></li>
+                    <li><a href="http://pop3.woniuxy.com/article/601">9.&nbsp;&nbsp;核心实验：利用UISpy识别Window...</a></li>
+                </ul>
+                <div class="tip" style="background-color: #3276b1; text-align: center; cursor: pointer;" onclick="gotoTop()">回到顶部</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 底部设计 -->
+<div class="container-fluid footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 left">
+                <p>版权所有 © 蜗牛笔记 (V-1.0)</p>
+                <p>备案号：<a href="https://beian.miit.gov.cn/" target="_blank">XXXXXXXXXXXXXXXXXXX</a></p>
+            </div>
+            <div class="col-4 center">
+                <p>友情链接</p>
+                <p><a href="http://www.woniuxy.com/" target="_blank">在线课堂</a>&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.woniuxy.com/live" target="_blank">直播课堂</a>&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.woniuxy.com/train/index.html" target="_blank">培训中心</a>&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.aduobi.com/" target="_blank">UI设计学院</a>
+                </p>
+            </div>
+            <div class="col-4 right">
+                <p>联系我们</p>
+                <p>★孵化园★</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
