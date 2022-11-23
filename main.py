@@ -52,11 +52,17 @@ def cookie():
 @app.route('/sc/read')
 def scread():
     #读取Session
-    # return '你当前的呢称（保存在Session内的）为：%s' %session.get('username')
-    # 读取Cookies
-    return '你当前的呢称（保存在Cookie内的）为：%s' % request.cookies.get('username')
+    return '你当前的呢称（保存在Session内的）为：%s' %session.get('username')
+    # # 读取Cookies
+    # return '你当前的呢称（保存在Cookie内的）为：%s' % request.cookies.get('username')
     #清空session
     # session.clear()
 
+
+
 if __name__ == '__main__':
+    # 引用模块文档demo.py
+    from controller.demo import *
+    # 注册蓝图，才可以引用
+    app.register_blueprint(demo)
     app.run(port=8080, debug=True)
