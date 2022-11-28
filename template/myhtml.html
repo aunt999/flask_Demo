@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="width:500px; height:300px; margin:auto; border:solid 2px red;text-align: center;padding: 20px; line-height: 40px">
+        <span>你的登录账号为：{{session.get('username')}}</span><br/>
+        <span>你的文章标题为：{{article.title}}</span><br/>
+        <span>文章阅读次数为：{{article.count+1}}</span><br/>
+
+        {% if count % 2 == 0 %}
+        <span>这个一个偶数</span><br>
+        {% else %}
+        <span>这个一个奇数</span><br>
+        {% endif %}
+        {#获取字典对象#}
+        <span>你的文章标题为：{{article.title|mylen}}</span><br/>
+
+    </div>
+</body>
+</html>
