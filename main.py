@@ -16,6 +16,12 @@ def mylen(str):
     return len(str)
 app.jinja_env.filters.update(mylen=mylen)
 
+
+#定制错误页面
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('error-404.html')
+
 #无jinjr2模板的演练
 if __name__ == '__main__':
     from controller.jinja2 import *
