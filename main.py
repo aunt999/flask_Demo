@@ -22,7 +22,7 @@ app.jinja_env.filters.update(mylen=mylen)
 def page_not_found(e):
     return render_template('error-404.html')
 
-#无jinjr2模板的演练
+#无jinja2模板的演练
 if __name__ == '__main__':
     from controller.jinja2 import *
     app.register_blueprint(jinjar2)
