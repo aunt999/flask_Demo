@@ -16,7 +16,7 @@
         <span>这个一个奇数</span><br>
         {% endif %}
         {#获取字典对象#}
-        <span>你的文章标题为：{{article.title|mylen}}</span><br/>
+        <span>你的文章标题为：{{session.get('username')}}</span><br/>
 
     </div>
 </body>
